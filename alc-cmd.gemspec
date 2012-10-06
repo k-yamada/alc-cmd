@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Alc::Cmd::VERSION
   gem.authors       = ["Kazuhiro Yamada"]
   gem.email         = ["kyamada@sonix.asia"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Command-line tool to translate English to Japanese }
+  gem.summary       = %q{Use SPACE ALC (http://eow.alc.co.jp/) from command line.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
