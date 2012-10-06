@@ -1,6 +1,6 @@
 # Alc::Cmd
 
-TODO: Write a gem description
+Command-line tool to translate English to Japanese 
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ alc-cmd test
 
 ## Contributing
 
