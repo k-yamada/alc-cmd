@@ -3,4 +3,3 @@
 require 'alc-cmd'
 
 Alc::Cmd::CLI.start
-puts "start"
