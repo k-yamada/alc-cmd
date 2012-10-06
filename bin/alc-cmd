@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'alc-cmd'
+
+Alc::Cmd::CLI.start
+puts "start"

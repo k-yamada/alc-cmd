@@ -1,4 +1,5 @@
 require "alc-cmd/version"
+require "alc-cmd/cli"
 
 module Alc
   module Cmd
