@@ -6,5 +6,6 @@ module Alc; module Cmd
     def red(word)
       say(word, :red)
     end
+
   end
 end; end
