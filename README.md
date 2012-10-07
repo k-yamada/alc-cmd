@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-    $ alc-cmd test
+    $ alc-cmd s search word
 
 ## Contributing
 
