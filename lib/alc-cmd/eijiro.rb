@@ -7,11 +7,11 @@ module Alc; module Cmd
     BASE_URI = "http://eow.alc.co.jp/"
     CHAR_CODE = "/UTF-8/"
 
-    def initialize()
+    def initialize() #:nodoc:
       @agent = Mechanize.new
     end
 
-    def search(words)
+    def search(words) #:nodoc:
       @agent.get(make_uri_from_words(words))
       @words = words
       result = ""
@@ -27,15 +27,15 @@ module Alc; module Cmd
       result
     end
 
-    def make_uri_from_words(words)
+    def make_uri_from_words(words) #:nodoc:
       return BASE_URI + make_query_from_words(words) + CHAR_CODE
     end
 
-    def make_query_from_words(words)
+    def make_query_from_words(words) #:nodoc:
       return words.map { |param| URI.encode(param) }.join('+')
     end
 
-    def get_search_assistances
+    def get_search_assistances #:nodoc:
       assistances = []
       @agent.page.search('div.sas strong').map do |h|
         assistances << h.inner_text.chomp("\t\t\t\t\t\t")
@@ -43,13 +43,13 @@ module Alc; module Cmd
       assistances
     end
 
-    def get_titles
+    def get_titles #:nodoc:
       return @agent.page.search('li span.midashi').map do |midashi|
         inner_text = midashi.inner_text
       end
     end
 
-    def get_meanings
+    def get_meanings #:nodoc:
       meanings = Array.new
       @agent.page.search('li div').each do |div|
         lis = div.search('li')
