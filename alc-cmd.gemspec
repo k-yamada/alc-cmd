@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.name          = "alc-cmd"
   gem.version       = Alc::Cmd::VERSION
   gem.authors       = ["Kazuhiro Yamada"]
-  gem.email         = ["kyamada@sonix.asia"]
+  gem.email         = ["yamadakazu45@gmail.com"]
   gem.description   = %q{Command-line tool to translate English to Japanese }
   gem.summary       = %q{Use SPACE ALC (http://eow.alc.co.jp/) from command line.}
   gem.homepage      = "https://github.com/k-yamada/alc-cmd"
