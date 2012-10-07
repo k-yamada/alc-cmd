@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["kyamada@sonix.asia"]
   gem.description   = %q{Command-line tool to translate English to Japanese }
   gem.summary       = %q{Use SPACE ALC (http://eow.alc.co.jp/) from command line.}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/k-yamada/alc-cmd"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -18,4 +18,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_dependency 'thor'
+  gem.add_dependency 'mechanize'
 end

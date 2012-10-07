@@ -1,5 +1,13 @@
 #!/usr/bin/env ruby
 
 require 'alc-cmd'
+require 'thor'
 
-Alc::Cmd::CLI.start
+result_text = Alc::Cmd::CLI.start
+
+tmp_file_name = "tmp/alc.temp" + Time.now.to_f.ceil.to_s
+File.open("#{tmp_file_name}", "w") do |file|
+  file.write(result_text)
+end
+system("less -R #{tmp_file_name}")
+system("rm -rf #{tmp_file_name}")
