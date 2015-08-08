@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-    $ alc-cmd s search word
+    $ alc-cmd s [search_word]
 
 ## Contributing
 
